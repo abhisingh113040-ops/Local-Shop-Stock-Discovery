@@ -1,0 +1,472 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopNearby | Local Shopping</title>
+
+    <link rel="stylesheet" href="add.css">
+    <script src="FirstPrioject.html\acc.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+            Shop<span>Nearby</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#shops">Shops</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="tagline">SUPPORT LOCAL BUSINESSES</p>
+
+            <h1>
+                Find Products<br>
+                <span>Near You</span>
+            </h1>
+
+            <p>
+                Discover products available in nearby shops.
+                Search locally and connect directly with shopkeepers.
+            </p>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Categories -->
+    <section class="section">
+
+        <h2>Shop by Category</h2>
+
+        <div class="categories">
+
+            <button class="category-btn active" data-category="all">
+                All
+            </button>
+
+            <button class="category-btn" data-category="grocery">
+                Grocery
+            </button>
+
+            <button class="category-btn" data-category="electronics">
+                Electronics
+            </button>
+
+            <button class="category-btn" data-category="fashion">
+                Fashion
+            </button>
+
+            <button class="category-btn" data-category="stationery">
+                Stationery
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Products -->
+    <section class="section" id="products">
+
+        <div class="section-heading">
+
+            <div>
+                <h2>Nearby Products</h2>
+
+                <p>
+                    Find products available in local shops.
+                </p>
+            </div>
+
+            <span id="resultCount">
+                6 Products
+            </span>
+
+        </div>
+
+
+        <div class="product-grid" id="productGrid">
+
+
+            <!-- Product 1 -->
+            <div class="product-card"
+                 data-name="rice"
+                 data-category="grocery">
+
+                <div class="product-image grocery">
+                    🌾
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Grocery
+                    </span>
+
+                    <h3>Rice</h3>
+
+                    <p class="shop-name">
+                        Sharma Grocery Store
+                    </p>
+
+                    <p class="shop-address">
+                        Main Market
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="price">
+                            ₹60 / kg
+                        </span>
+
+                        <span class="stock-badge">
+                            In Stock
+                        </span>
+
+                    </div>
+
+                    <button class="contact-btn"
+                            data-shop="Sharma Grocery Store">
+                        Contact Shop
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product-card"
+                 data-name="milk"
+                 data-category="grocery">
+
+                <div class="product-image milk">
+                    🥛
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Grocery
+                    </span>
+
+                    <h3>Milk</h3>
+
+                    <p class="shop-name">
+                        Fresh Dairy Shop
+                    </p>
+
+                    <p class="shop-address">
+                        Station Road
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="price">
+                            ₹30 / 500ml
+                        </span>
+
+                        <span class="stock-badge">
+                            In Stock
+                        </span>
+
+                    </div>
+
+                    <button class="contact-btn"
+                            data-shop="Fresh Dairy Shop">
+                        Contact Shop
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card"
+                 data-name="headphones"
+                 data-category="electronics">
+
+                <div class="product-image electronics">
+                    🎧
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Electronics
+                    </span>
+
+                    <h3>Headphones</h3>
+
+                    <p class="shop-name">
+                        Digital Electronics
+                    </p>
+
+                    <p class="shop-address">
+                        City Center
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="price">
+                            ₹799
+                        </span>
+
+                        <span class="stock-badge">
+                            In Stock
+                        </span>
+
+                    </div>
+
+                    <button class="contact-btn"
+                            data-shop="Digital Electronics">
+                        Contact Shop
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product-card"
+                 data-name="shirt"
+                 data-category="fashion">
+
+                <div class="product-image fashion">
+                    👕
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Fashion
+                    </span>
+
+                    <h3>Casual Shirt</h3>
+
+                    <p class="shop-name">
+                        Fashion Point
+                    </p>
+
+                    <p class="shop-address">
+                        Market Road
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="price">
+                            ₹599
+                        </span>
+
+                        <span class="stock-badge">
+                            In Stock
+                        </span>
+
+                    </div>
+
+                    <button class="contact-btn"
+                            data-shop="Fashion Point">
+                        Contact Shop
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 5 -->
+            <div class="product-card"
+                 data-name="notebook"
+                 data-category="stationery">
+
+                <div class="product-image stationery">
+                    📚
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Stationery
+                    </span>
+
+                    <h3>Notebook</h3>
+
+                    <p class="shop-name">
+                        Student Stationery
+                    </p>
+
+                    <p class="shop-address">
+                        College Road
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="price">
+                            ₹50
+                        </span>
+
+                        <span class="stock-badge">
+                            In Stock
+                        </span>
+
+                    </div>
+
+                    <button class="contact-btn"
+                            data-shop="Student Stationery">
+                        Contact Shop
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 6 -->
+            <div class="product-card"
+                 data-name="sugar"
+                 data-category="grocery">
+
+                <div class="product-image sugar">
+                    🍚
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Grocery
+                    </span>
+
+                    <h3>Sugar</h3>
+
+                    <p class="shop-name">
+                        Gupta General Store
+                    </p>
+
+                    <p class="shop-address">
+                        Near Bus Stand
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="price">
+                            ₹45 / kg
+                        </span>
+
+                        <span class="stock-badge">
+                            In Stock
+                        </span>
+
+                    </div>
+
+                    <button class="contact-btn"
+                            data-shop="Gupta General Store">
+                        Contact Shop
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- No Results -->
+        <div id="noResults">
+
+            <h3>No Products Found</h3>
+
+            <p>
+                Try searching another product.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about section" id="about">
+
+        <h2>Why ShopNearby?</h2>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>📍 Nearby Shops</h3>
+                <p>Discover local shops around your area.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🔎 Easy Search</h3>
+                <p>Find products without visiting every shop.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🤝 Local Support</h3>
+                <p>Connect with local shopkeepers directly.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h2>ShopNearby</h2>
+
+        <p>
+            Discover local products. Support local shops.
+        </p>
+
+        <p class="copyright">
+            © 2026 ShopNearby. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
